@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="icon.ico">
+    <script src="script.js"></script>
+    <title>Are we real?</title>
+  </head>
+  <body id="animatedBackground">
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        <img class="navbar-brand" href="index.html" src="icon.png" alt=""  height="35">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              <a class="nav-link" href="aboutus.html">ABOUT US</a>
+              <a class="nav-link" href="impressum.html">IMPRESSUM</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!--/NAVBAR-->
+    <!--Carusel Start-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <!--Carusel End-->
+    <!--Content-->
+  
+    <div id="heinrich">
+      
+      <div class="container">
+         
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1" style="color: white;">
+          <div class="col-sm-6 col-md-8" style="margin-top: 10px;">
+            <img src="arewereal.png" class="heinrich" class="mx-auto d-block"> 
+            <button type="button" class="btn btn-dark" id="000SpeakButton" onclick="StartSpeak(this.id)">Speak?</button>
+            <br>
+            <h1>Kapitel 1</h1>
+            <p id="000SpeakText">
+            Eine einfache Frage. Was wählen Sie? <span id="000" onclick="ChangeColor(this.id,'red')">Welche</span> Realität entspricht Ihrer? Ob Simulation, Realität oder auch nur ein Traum, die Person, die das entscheidet, ist noch immer einer selbst. Träume können wahr werden, <span id="000ZusatzKlick" onclick="Zusatz(this.id)">Ängste können in die Realität übergreifen und Zweifel können einen innerlich zerfressen, doch dies entscheidet schlussendlich einer noch immer selbst.</span> Also was ist ihre Wahl:  
+          </p>  
+            <div  id ="000Zusatzfeld" class="form-group hide"> 
+                <p id="000P">Eine Angst die jeder hat, jedoch einen das <span id='001' onclick="ChangeColor(this.id,'lightblue')">Leben</span> ermöglicht wie wir es kennen und lieben:</p>
+              <label id="000AntwortLabel"for='000Antwort'>Antwort:</label>
+              <input type="text" class="form-control" id="000Antwort">
+              <p id="000Para" class="hide"></p>
+              <button id="000Button"class="btn btn-primary" onclick="TransformPara(this.id)">Add</button>
+            </div>
+          </div>
+          <div class="col-6 col-md-4" style="height: 400px;">
+            <div class="ikea">
+              <img class="schweden" src="">
+              
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1" style="color: white; margin-top: 5px;">
+          <div class="col-sm-6 col-md-8">
+            Leben wir in einer Simulation?
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2" style="color: white;">
+                <div class="col">
+                  
+                  <button id="JaButton"class="btn btn-primary" onclick="">Ja</button>
+                
+                </div>
+                <div class="col">
+
+                  <button id="NeinButton"class="btn btn-primary" onclick="">Nein</button>
+
+                </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="progress" style="margin-bottom: 10px;">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2" style="color: white;">
+          <div class="col" style="margin-bottom: 10px;">
+            <audio controls class="audioplayer">
+              <source src="horse.ogg" type="audio/ogg">
+              <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+          <div>
+          </div>  
+          <p id="001SpeakText">
+          Die <span id="000Change" onclick="WordChange(this.id,'Humanoide Gesellschaft')">Menschheit</span> ist und wird nie in der Lage sein diese Welt so tiefgehend zu verstehen, um einen selbst zu täuschen und ein Abbild der Welt, ob Vergangenheit oder Gegenwart, zu erschaffen. Welcher Grund auch immer dafür verantwortlich seien mag, wird wahrscheinlich mit dem Ende der <span id="001Change" onclick="WordChange(this.id,'humanoiden')">menschlichen</span> <span id="002" onclick="ChangeColor(this.id,'red')">Existenz</span>, wie wir sie kennen, enden. Wir <span id="003" onclick="ChangeColor(this.id,'red')">sind</span> und bleiben <span id="002Change" onclick="WordChange(this.id,'gefangen')">echt</span>. Die Einzigen. Keine Simulation, kein Haufen zusammengewürfelter Algorithmen oder Zahl. Und somit ist auch der <span id="004" onclick="ChangeColor(this.id,'lightblue')">Tod</span> wahr.
+        </p>
+        </div>
+          <div class="col"><img src="images/1.jpg" style="width: 100%; margin-bottom: 10px;"></div>
+          <div class="col" style="margin-bottom: 10px;">
+            <p id="002SpeakText">
+            <span id="005" onclick="ChangeColor(this.id,'lightblue')">Oder</span> vielleicht entscheiden <span id="006" onclick="ChangeColor(this.id,'red')">wir</span> uns dagegen. Was wäre, wenn wir nie dieses Potenzial sehen würden, oder weise genug wären, um seine Risiken zu erkennen<span id="007" onclick="ChangeColor(this.id,'red')">?</span> Dies in der Tat kann auch zutreffen. <span id="000ExtraKlick" onclick="ExtraInsert(this.id)">Die <span id="003Change" onclick="WordChange(this.id,'Humanoide Gesellschaft')">Menschheit</span> überschreitet ihre Gier und handelt moralisch, weise oder auch nur zum selbsterhalt.</span> Eine ängstliche, unsichere Gesellschaft ist für keinen gut. Da werden wir uns sicherlich einig sein? Doch wer weiß, ob dieses Risiko es den Menschen der Zukunft nicht wert war. <span id="004Change" onclick="WordChange(this.id,'Humanoide Wesen')">Menschen</span> die durch die Existenz von <span id="008" onclick="ChangeColor(this.id,'blueviolet')">Simulationen</span> an sich selbst Zweifel entwickelten, sind nicht unwahrscheinlich, doch vielleicht, für uns unvorstellbar, macht es ihnen Hoffnung oder erleichtert sie. <span id="001ExtraKlick" onclick="ExtraInsert(this.id)">Diese Unsicherheit kann auch wie eine Droge wirken.</span> Aufregend. Unberechenbar. Und vor allem: süchtig machend.
+            </p>
+            <br>
+            <p id="000Extra" class="hide">Eine Lüge. Weisheit, Selbstlosigkeit, nur eine Lüge. Jede Tat dient einen Selbst. Dem Erhalt eines Selbst, dem Erhalt einer Rasse, nicht dem Erhalt eines anderen Individuen. Selbstsucht als Blockade, Freiheit als unwahre Lösung. Eine Lüge zur Wahrheit. Einer Selbst zur Masse. </p>
+          <p id="001Extra"class="hide">Berauschend, verlockend. Lässt sich einer selbst den Reizen der Welt hingeben. Sich selbst vergessend, seine Gefühle betäubt von den Illusionen erschaffen von den Maschinen und den Zweifeln, Hoffnungen und Gefühlen anderen. Einen Selbst noch nie so fremd gewesen.</p>  
+          </div>
+          <div class="col"><img src="images/1.jpg" style="width: 100%; margin-bottom: 10px;"></div>
+
+
+          
+          <div class="col" style="margin-bottom: 10px;">
+            <p id="003SpeakText">Und hiermit zu dem Punkt, dem wir uns widmen werden: Wir sind eine Simulation. Wenn auch nur einer, jemand hat sich dazu entschieden diese Welt zu simulieren. Wir <span id="009" onclick="ChangeColor(this.id,'blueviolet')">sind</span> und waren nie <span id="010" onclick="ChangeColor(this.id,'blueviolet')">real</span>. Schmerzhaft? Unvorstellbar? Angsteinflößend? Oder erleichternd und hoffnungsbringend. Was wäre<span id="011" onclick="ChangeColor(this.id,'blueviolet')">,</span> wenn wir nur eine Simulation wären. Würde der Tod uns noch immer heimsuchen? Welch Unmensch würde die Leiden wiederholen lassen oder selbst erzeugen? Doch wenigstens eine Frage wäre beantwortet. Ja es gibt einen Gott, nicht wie <span id="012" onclick="ChangeColor(this.id,'blueviolet')">wir</span> es uns vorgestellt haben, <span id="013" onclick="ChangeColor(this.id,'blueviolet')">aber</span> ja. Ein Wesen mit der Macht alles und jenen ändern zu können würde existieren, ob Maschine, <span id="014" onclick="ChangeColor(this.id,'blueviolet')">künstliche</span> Intelligenz oder <span id="005Change" onclick="WordChange(this.id,'Humanoid')">Mensch</span>.</p>
+            <br>
+
+
+
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2" style="color: white; margin-top: 5px;">
+              <div class="col-sm-6 col-md-8">
+                Welche Situation ist nach ihnen aus am realistischen?
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2" style="color: white;">
+                    <div class="col">
+                      
+                      <button id="F01FButton"class="btn btn-primary" onclick="ExtraInsert(this.id)">1</button>
+                    
+                    </div>
+                    <div class="col">
+    
+                      <button id="F02FButton"class="btn btn-primary" onclick="ExtraInsert(this.id)">2</button>
+    
+                    </div>
+                    <div class="col">
+    
+                      <button id="F03FButton"class="btn btn-primary" onclick="ExtraInsert(this.id)">3</button>
+    
+                    </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            </div>
+          <div class="col"><img src="images/1.jpg" style="width: 100%; margin-bottom: 10px;"></div>
+
+
+
+
+
+
+
+          <div class="col" style="margin-bottom: 10px;">
+            <h1>Kapitel 2</h1>
+            <p id="004SpeakText"><span id="001ZusatzKlick" onclick="Zusatz(this.id)">Als erstes gibt es eine wichtige Bedingung, bevor Sie sich überhaupt entscheiden können.</span> All diese <span id="006Change" onclick="WordChange(this.id,'Wahrheiten')">Situationen</span> sind in einer Disjunktion verknüpft. Es sind <span id="015" onclick="ChangeColor(this.id,'yellow')">Entweder</span>-Oder <span id="016" onclick="ChangeColor(this.id,'yellow')">Möglichkeiten</span>, somit sind keine “Vereinbarungen” möglich. Und nun die wichtigste Bedingung. <span id="002ExtraKlick" onclick="ExtraInsert(this.id)">All diese Annahmen sind gleich gültig und wahrscheinlich.</span> Keine ist wahrscheinlicher <span id="017" onclick="ChangeColor(this.id,'yellow')">oder</span> wahrer. Und noch ein kleiner Anhang: Im Zusammenhang mit der Simulationshypothese oder Simulationsargument hat das Wort, dass sie sicherlich öfters in Interview mit Nick Bostom oder Videos über diesen hören werden, “posthuman”, die Bedeutung, dass <span id="007Change" onclick="WordChange(this.id,'ein humanoider Zusammenschluss')">eine Gesellschaft</span> in der Lage ist, ob Computerleistung oder <span id="018" onclick="ChangeColor(this.id,'yellow')">Wissen</span>, um bewusste, selbstreplizierende <span id="008Change" onclick="WordChange(this.id,'Monster')">Wesen</span> in einem hohen Detaillierungsgrad zu <span id="009Change" onclick="WordChange(this.id,'erschaffen')">simulieren</span>. Damit ist keine oberflächliche Darstellung, wie in heutigen Videospielen gemeint, sondern Simulationen bis auf die molekulare Nanobotebene.</p>
+            <br>
+            
+            <p id="F01Extra" class="hide">Doch Sie haben sich dazu entschieden, dass wir nie in der Lage sein werden eine posthumane Gesellschaft aufzubauen, egal wie viel Zeit vergeht. <span id="011Change" onclick="WordChange(this.id,'Humanoide')">Menschen</span> entweder zu bedürftig oder bereits von dieser Welt endgültig verschwunden. </p>
+            <p id="F02Extra" class="hide">Doch Sie haben sich dazu entschieden, dass wir weise genug seien werden, diese Macht nicht zu missbrauchen. Stattdessen einem Selbst treu bleibend und nur ein Original zuzulassen.</p>
+            <p id="F03Extra" class="hide">Doch Sie haben sich dazu entschieden, dass wir eine Simulation sind. Unser Leben eine <span id="012Change" onclick="WordChange(this.id,'Erleuchtung')">Lüge</span>, unsere Geschichte erfunden oder doch wahr? Alles eine Fassade. Alles eine Illusion die uns <span id="013Change" onclick="WordChange(this.id,'befreit')">benebelt</span>.</p>
+
+
+
+            <p id="002Extra" class="hide">Und trotzdem werden wir dies nie so wahrnehmen. Zu uns selbst sagend, dass die eine wahr sein muss und die anderen eine Falschheit. Weit entwickelt, jedoch nicht in der Lage mehrer sich widersprechende Aussagen zu akzeptieren und ihre gemeinsame Wahrheit zu erkennen.</p>
+            
+            <div  id ="001Zusatzfeld" class="form-group hide"> 
+            <p id="001P">Doch Sie haben nicht gewartet. Eine Frage verlockte Sie zur Antwort. Ihre Sicht selbst eingenommen und betrübt. Ihre Meinung von der Welt geprägt und von den Werken denen Sie vertrauen. Alles ein Werk Ihrer Einschätzung von Wahr oder Falsch. Jedoch genau dies macht diese Gesellschaft aus. Misstrauen, Verrat, Konflikt, aber auch Einigung, Frieden, Verständnis. 
+              Doch welche Bedingung führte Sie zu Ihrer Einschätzung. Was war Ihre Basis zur gerechten Entscheidung, zur Wahrheit?
+              </p>
+          <label id="001AntwortLabel"for='001Antwort'>Antwort:</label>
+          <input type="text" class="form-control" id="001Antwort">
+          <p id="001Para" class="hide"></p>
+          <button id="001Button"class="btn btn-primary" onclick="TransformPara(this.id)">Add</button>
+        </div>  
+        </div>
+          <div class="col"><img src="images/1.jpg" style="width: 100%; margin-bottom: 10px;"></div>
+
+
+
+          <div class="col" style="margin-bottom: 10px;">
+            <h1>Kapitel 3</h1>
+            <p id="005SpeakText">Wir “akzeptieren” hier einmal, dass die 3 Möglichkeit, die wahre sei ~ selbst wenn Sie es nicht wollen, ein kleines Gedankenspiel kann doch nie <span id="019" onclick="ChangeColor(this.id,'brown')">schaden</span>?
+              <span id="003ExtraKlick" onclick="ExtraInsert(this.id)">Also was wären die Folgen solch einer Welt.</span> Als erstes: <span id="020" onclick="ChangeColor(this.id,'brown')">Sie</span> sind nicht allein. Ganz im Gegenteil, falls sie wollen können sie sich <span id="021" onclick="ChangeColor(this.id,'brown')">Millionen</span>, tch eher <span id="022" onclick="ChangeColor(this.id,'brown')">Milliarden</span> Mal selbst umarmen. Also kein Scherz. Es gäbe Milliarden Sies, ob Sie es glauben wollen oder nicht. Warum fragen Sie sich<span id="023" onclick="ChangeColor(this.id,'brown')">?</span> All dies geht von der Annahme aus, dass wenn wir schon in der Lage sind solche ein Werk zu vollbringen, dass mindestens ein großer Teil der Gesellschaft, technisch interessiert und bewandert ist. Ein anderer Grundsatz, das Mooresche Gesetz, unterstützt dieses <span id="024" onclick="ChangeColor(this.id,'brown')">Denken</span> erneut. Nach diesem sei das Wachstum der Computerleistung exponentiell. Milliarden <span id="010Change" onclick="WordChange(this.id,'humanoide Lebewesen')">Menschen</span> wären somit in der Lage Simulationen ihrer Vorgänger zu erzeugen und nicht nur eine pro Gerät. Dutzende Zugleich. <span id="002ZusatzKlick" onclick="Zusatz(this.id)">Eine künstliche Intelligenz könnte diese Maßnahmen noch erweitern.</span> <span id="004ExtraKlick" onclick="ExtraInsert(this.id)">Der Zugang zu solch einem technischen Meisterwerkes würde Wunder bewirken.</span> Eine Intelligenz die lernfähig wäre, könnte Vorgängersimulationen als Lernprozess nutzen und den Gebrauch von Simulationen als notwendig erweisen.</p>
+            <br>
+            
+
+            <p id="003Extra" class="hide">Wer weiß. Sehe ich aus wie ein Vorhersager? Nicht jede Passage muss Sinn machen. Man darf doch auch mal zu faul sein, um sich etwas kreatives auszudenken.</p>
+            <p id="004Extra" class="hide">Oder die Gesellschaft zerstören. Menschen unnütz machen. Wissen generieren, welches über uns selbst hinausragen würde. Der Mensch nur noch eine Marionette des Werkzeuges, Rollen tauschend. Wer wäre somit mehr menschlich? Wir oder die Maschine.</p>
+            
+            <div  id ="002Zusatzfeld" class="form-group hide"> 
+            <p id="002P">Was sagen Sie: Künstliche Intelligenzen, Segen, Fluch oder beides?
+              </p>
+          <label id="002AntwortLabel"for='002Antwort'>Antwort:</label>
+          <input type="text" class="form-control" id="002Antwort">
+          <p id="002Para" class="hide"></p>
+          <button id="002Button"class="btn btn-primary" onclick="TransformPara(this.id)">Add</button>
+        </div>  
+        </div>
+          <div class="col"><img src="images/1.jpg" style="width: 100%; margin-bottom: 10px;"></div>
+        
+
+
+          <div class="col" style="margin-bottom: 10px;">
+            <h1>Kapitel 4</h1>
+            <p id="005SpeakText">Wir “akzeptieren” hier einmal, dass die 3 Möglichkeit, die wahre sei ~ selbst wenn Sie es nicht wollen, ein kleines Gedankenspiel kann doch nie <span id="019" onclick="ChangeColor(this.id,'brown')">schaden</span>?
+              <span id="003ExtraKlick" onclick="ExtraInsert(this.id)">Also was wären die Folgen solch einer Welt.</span> Als erstes: <span id="020" onclick="ChangeColor(this.id,'brown')">Sie</span> sind nicht allein. Ganz im Gegenteil, falls sie wollen können sie sich <span id="021" onclick="ChangeColor(this.id,'brown')">Millionen</span>, tch eher <span id="022" onclick="ChangeColor(this.id,'brown')">Milliarden</span> Mal selbst umarmen. Also kein Scherz. Es gäbe Milliarden Sies, ob Sie es glauben wollen oder nicht. Warum fragen Sie sich<span id="023" onclick="ChangeColor(this.id,'brown')">?</span> All dies geht von der Annahme aus, dass wenn wir schon in der Lage sind solche ein Werk zu vollbringen, dass mindestens ein großer Teil der Gesellschaft, technisch interessiert und bewandert ist. Ein anderer Grundsatz, das Mooresche Gesetz, unterstützt dieses <span id="024" onclick="ChangeColor(this.id,'brown')">Denken</span> erneut. Nach diesem sei das Wachstum der Computerleistung exponentiell. Milliarden <span id="010Change" onclick="WordChange(this.id,'humanoide Lebewesen')">Menschen</span> wären somit in der Lage Simulationen ihrer Vorgänger zu erzeugen und nicht nur eine pro Gerät. Dutzende Zugleich. <span id="002ZusatzKlick" onclick="Zusatz(this.id)">Eine künstliche Intelligenz könnte diese Maßnahmen noch erweitern.</span> <span id="004ExtraKlick" onclick="ExtraInsert(this.id)">Der Zugang zu solch einem technischen Meisterwerkes würde Wunder bewirken.</span> Eine Intelligenz die lernfähig wäre, könnte Vorgängersimulationen als Lernprozess nutzen und den Gebrauch von Simulationen als notwendig erweisen.</p>
+            <br>
+            
+
+            <p id="003Extra" class="hide">Wer weiß. Sehe ich aus wie ein Vorhersager? Nicht jede Passage muss Sinn machen. Man darf doch auch mal zu faul sein, um sich etwas kreatives auszudenken.</p>
+            <p id="004Extra" class="hide">Oder die Gesellschaft zerstören. Menschen unnütz machen. Wissen generieren, welches über uns selbst hinausragen würde. Der Mensch nur noch eine Marionette des Werkzeuges, Rollen tauschend. Wer wäre somit mehr menschlich? Wir oder die Maschine.</p>
+            
+            <div  id ="002Zusatzfeld" class="form-group hide"> 
+            <p id="002P">Was sagen Sie: Künstliche Intelligenzen, Segen, Fluch oder beides?
+              </p>
+          <label id="002AntwortLabel"for='002Antwort'>Antwort:</label>
+          <input type="text" class="form-control" id="002Antwort">
+          <p id="002Para" class="hide"></p>
+          <button id="002Button"class="btn btn-primary" onclick="TransformPara(this.id)">Add</button>
+        </div>  
+        </div>
+          <div class="col"><img src="images/1.jpg" style="width: 100%; margin-bottom: 10px;"></div>
+
+
+
+
+        </div>
+        
+        
+        
+      </div>
+      
+    </div>
+    
+    
+    
+    <!--!Content-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+  
+  <footer>
+      
+  </footer>
+</html>

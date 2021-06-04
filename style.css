@@ -1,0 +1,314 @@
+@media (max-width: 960px) {
+  #heinrich{
+    margin: auto;
+}
+}
+#heinrich{
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-self: center;
+}
+#point{
+    margin-left: 8px;
+    color: white;
+}
+div.scrollmenu {
+    background-color: #212529;
+    overflow: auto;
+    white-space: nowrap;
+  }
+#franz{
+  color: white;
+}
+#helga{
+  color: rgb(185, 185, 185);
+}
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .carousel {
+    margin-bottom: 1rem;
+  }
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+.carousel-item{
+    height: 26rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%; 
+    background: no-repeat center center fixed;
+    overflow: hidden;
+    object-fit: cover;
+}
+.logo{
+  width: 40%;
+  transition: transform 2s;
+}
+.logo:hover{
+  transform: scale(1.10);
+  transition: transform 2s;
+}
+.Kapitel1{
+  margin: auto;
+  width: 80%;
+  
+}
+
+@media (max-width: 960px) {
+    /* Bump up size of carousel content */
+    .Kapitel1{
+      margin: auto;
+      width: 90%;
+    }
+.logo{
+  width: 90%;
+}
+.carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+}
+.carousel-item{
+      height: 16rem;
+}
+}
+.audioplayer{
+  margin: auto;
+}
+.progress-bar{
+  color: black;
+  background-color: white;
+}
+.progress{
+  background-color: #212529;
+  border-radius: 0px;
+  border-color: white;
+  border-style: solid;
+  height: 50px;
+}
+
+.ikea{
+  margin-top: 10px;
+  height: 300px; 
+  width: 200px; 
+  background-color: teal; 
+  align-self: center;
+  animation-name: ikea1;
+  animation-duration: 4s;
+  margin-bottom: 100px;
+  z-index: 100;
+}
+:hover.ikea{
+  margin-top: 10px;
+  height: 400px; 
+  width: 250px; 
+  background-color: rgb(37, 214, 214); 
+  animation-name: ikea;
+  animation-duration: 2s;
+  margin-bottom: 0px;
+}
+.schweden{
+  height: 300px; 
+  width: 200px; 
+  background-color: rgb(23, 0, 128); 
+  z-index: 50;
+  margin-bottom: 0px;
+  position: absolute;
+
+
+}
+@keyframes ikea {
+  from {height: 300px; width: 200px;  margin-bottom: 100px; }
+  to {height: 400px; width: 250px; margin-bottom: 0px; }
+}
+@keyframes ikea1 {
+  from {height: 400px; width: 250px;  margin-bottom: 0px;}
+  to {height: 300px; width: 200px;  margin-bottom: 100px; }
+}
+.heinrich{
+  
+  width: 100%;
+  margin: auto;
+  position: auto;
+}
+
+.hide{
+  visibility: hidden;
+  display: none;
+}
+
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#animatedBackground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("images/background.svg");
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: auto 50%;
+  animation: animatedBackground 500s linear infinite;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 0;
+  }
+}
+.main{
+  width: 90%;
+  margin: auto;
+}
+.red{
+  transition: left 2s, opacity 2s, transform 2s;
+  width: 20%;
+  left: 40%;
+  opacity: 0.0;
+}
+.blue{
+  transition: left 2s, opacity 2s, transform 2s;
+  width: 20%;
+  left: 40%;
+  opacity: 0.0;
+}
+.green{
+  width: 20%;
+  vertical-align: middle;
+  left: 40%;
+  transform: rotate(0deg);
+  transition: transform 2s;
+
+}
+.greenshadow{
+  width: 20%;
+  vertical-align: middle;
+  left: 40%;
+  transform: rotate(0deg);
+
+
+}
+.main:hover .red{
+  transition: left 2s, opacity 2s, transform 2s;
+  left: 62%;
+  opacity: 1.0;
+  transform: scale(0.90);
+}
+.main:hover .blue{
+  transition: left 2s, opacity 2s, transform 2s;
+  left: 18%;
+  opacity: 1.0;
+  transform: scale(0.90);
+}
+.main:hover .green{
+  transform: rotate(360deg);
+  transition: transform 2s;
+}
+.adriantech{
+  width: 20%;
+}
+.navbar-brand{
+  transition: all 1s;
+}
+.navbar-brand:hover{
+  border-radius: 50%;
+  transition: all 1s;
+}
+.lukas:hover {
+  transform: scale(1.05);
+  transition: all .2s;
+}
+.lukas {
+  width: 100%;
+  transition: all .2s;
+}
+.main:hover .blue2{
+  transition: left 2s, opacity 2s, transform 2s;
+  left: 18%;
+  opacity: 1.0;
+  transform: scale(0.90);
+}
+.blue2{
+  transition: left 2s, opacity 2s, transform 2s;
+  width: 20%;
+  left: 40%;
+  opacity: 0.0;
+  animation: blue2 3s linear infinite;
+}
+@keyframes blue2{
+  from{
+transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+.astronaut{
+  width: 20%
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.astronaut {
+  -webkit-animation: rotating 10s linear infinite;
+  -moz-animation: rotating 10s linear infinite;
+  -ms-animation: rotating 10s linear infinite;
+  -o-animation: rotating 10s linear infinite;
+  animation: rotating 10s linear infinite;
+}
